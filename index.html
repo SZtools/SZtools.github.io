@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Luigi Lombardo</title>
+    <title>SZ plugin</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -39,84 +39,25 @@
 </head>
 <body>
     <header>
-        <h1>Luigi Lombardo</h1>
+        <h1>SZ-plugin</h1>
     </header>
     <section>
         <img src="https://landslideresearch.github.io/images/luigi_lombardo.jpg" alt="Luigi Lombardo">
         <h2>About Me</h2>
-        <p>I am an assistant professor of data-driven modelling for natural hazards at the University of Twente, Faculty of Geo-Information Science and Earth Observation. I am a spatio-temporal data-driven and physics-based modeling enthusiast, with main expertise in earth surface processes such as landslides, flash floods, and soil erosion.</p>
-        <p>My current scientific direction involves understanding compound hazards’ dynamics, where climatic and/or seismic stresses induce chains of catastrophic effects. My long-term goal is to revolutionize geomorphological risk management tools and policies.</p>
-    </section>
-    <section>
-        <h2>Current PhD Supervision</h2>
+        <p>This repository contains the code for a QGIS plugin, called “Susceptibility Zoning plugin” (SZ-plugin), aiming at creating maps of susceptibility to various natural forcing elements.
+            The plugin has been developed with a main focus and application towards landslides susceptibility, but it can be applied to different types of natural events or inter-disciplinary applications.
+            The plugin uses several type of statistical, machine learning models for susceptibility evaluation, such as:
+        <p>
         <ul>
-            <li>
-                <strong>Ashok Dahal</strong><br>
-                AI in Co-Seismic Landslides
-            </li>
-            <li>
-                <strong>Mateo Moreno Zapata</strong><br>
-                Spatio-Temporal Modelling
-            </li>
-            <li>
-                <strong>Letizia Elia</strong><br>
-                Cryospheric Hazards
-            </li>
-            <li>
-                <strong>Zhice Fang</strong><br>
-                Space-time Modelling
-            </li>
-            <li>
-                <strong>Yuanjing Chen</strong><br>
-                Physics-Based Modelling
-            </li>
-            <li>
-                <strong>Kun He</strong><br>
-                InSAR in Landslide Hazards
-            </li>
-            <li>
-                <strong>Tengfei Wang</strong><br>
-                AI in Deformation Timeseries
-            </li>
-            <li>
-                <strong>Mahnoor Ahmed</strong><br>
-                Spatio-temporal Early Warning
-            </li>
-            <li>
-                <strong>Priscilla Niyokwiringirwa</strong><br>
-                Coastal Landscape Evolution
-            </li>
-            <li>
-                <strong>Erin Bryce</strong><br>
-                Statistical Modelling
-            </li>
-            <li>
-                <strong>Kushanav Bhuyan</strong><br>
-                Deep Learning for Landslide Mapping
-            </li>
+            <li>Generalized Additive Model with two distributions: Binomial, Gaussian (see pygam)</li>
+            <li>Decision Tree (see scikit-learn)</li>
+            <li>Support Vector Machine (see scikit-learn)</li>
+            <li>Random Forest (see scikit-learn)</li>
+            <li>Multi-layer Perceptron as classifier (see scikit-learn) and regressor (see scikit-learn)</li>
         </ul>
-    </section>
-    <section>
-        <h2>Current MSc Students</h2>
-        <ul>
-            <li>
-                <strong>Jana Lim</strong><br>
-                Developing an early warning system for rainfall-induced landslides via space-time deep learning tools.
-            </li>
-            <li>
-                <strong>Taseer Hussain</strong><br>
-                Building hierarchical Bayesian models for coseismic landslide prediction.
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>Former PhD Students</h2>
-        <ul>
-            <li>
-                <strong>Dr. Marco Loche</strong><br>
-                Post-doc at Charles University (Czechia) working on multi-scale assessment of thermomechanical processes in geodynamics.
-            </li>
-        </ul>
+        <p> The plugin allows the user to perform spatial and temporal analysis implementing space-time cross-validation (CV) methods
+        Moreover the plugin allows the user to run space-time transferability with all the models implemented.
+        </p>
     </section>
 </body>
 </html>
