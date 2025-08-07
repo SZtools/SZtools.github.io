@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <plugins>
-    <pyqgis_plugin name="SZ" version="2.0.1">
+    <pyqgis_plugin name="SZ" version="2.0.2">
         <description>Spatiotemporal data-driven Zoning plugin. SZ-plugin allows the user to model space-time regressions and classifications from the pre-processing of the data to the cross-validation of the final map</description>
         <homepage>https://sz-docs.readthedocs.io</homepage>
         <qgis_minimum_version>3.28</qgis_minimum_version>
